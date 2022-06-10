@@ -1,0 +1,25 @@
+CRITICAL - 2022-06-10 09:12:01 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\Home.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(848): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-10 09:57:07 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\Home.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\Commands\Utilities\Routes\ControllerMethodReader.php(43): ReflectionClass->__construct('App\\Controllers\\Home')
+ 5 SYSTEMPATH\Commands\Utilities\Routes\AutoRouteCollector.php(52): CodeIgniter\Commands\Utilities\Routes\ControllerMethodReader->read('App\\Controllers\\Home', 'Home', 'index')
+ 6 SYSTEMPATH\Commands\Utilities\Routes.php(135): CodeIgniter\Commands\Utilities\Routes\AutoRouteCollector->get()
+ 7 SYSTEMPATH\CLI\Commands.php(63): CodeIgniter\Commands\Utilities\Routes->run([])
+ 8 SYSTEMPATH\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('routes', [])
+ 9 SYSTEMPATH\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index([])
+10 SYSTEMPATH\CodeIgniter.php(891): CodeIgniter\CLI\CommandRunner->_remap('index', [...])
+11 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+12 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+14 ROOTPATH\spark(86): CodeIgniter\CLI\Console->run()
