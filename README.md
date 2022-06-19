@@ -8,7 +8,7 @@ KELAS   : TI.20.B1
 Untuk mengaktifkan ekstentsi tersebut, melalu XAMPP Control Panel, pada bagian<br>
 Apache klik Config -> PHP.ini
 
-![image](img/1.jpg)
+![image](SS/1.jpg)
 
 Pada bagian extention, hilangkan tanda ; (titik koma) pada ekstensi yang akan<br>
 diaktifkan. Kemudian simpan kembali filenya dan restart Apache web server.
