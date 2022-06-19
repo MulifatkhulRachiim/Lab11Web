@@ -19,23 +19,23 @@ manual dan menggunakan composer. Pada praktikum ini kita menggunakan cara manual
 • Unduh Codeigniter dari website https://codeigniter.com/download<br>
 • Extrak file zip Codeigniter ke direktori htdocs/lab11_ci.<br>
 • Ubah nama direktory framework-4.x.xx menjadi ci4.<br>
-![image](img/2.jpg)
+![image](SS/2.jpg)
 • Buka browser dengan alamat http://localhost/lab11_ci/ci4/public/<br>
-![image](img/tidaj_eror.jpg)
+![image](SS/tidaj_eror.jpg)
 
 # Menjalankan CLI (Command Line Interface)
 Codeigniter 4 menyediakan CLI untuk mempermudah proses development. Untuk <br>
 mengakses CLI buka terminal/command prompt.<br>
-![image](img/3.jpg)<br>
+![image](SS/3.jpg)<br>
 Arahkan lokasi direktori sesuai dengan direktori kerja project dibuat<br>
 (xampp/htdocs/lab11_ci/ci4/)<br>
 lalu masukan perintah php spark<br>
-![image](img/php_spark.jpg)
+![image](SS/php_spark.jpg)
 
 # Mengaktifkan Mode Debugging
 Ubah nama file env menjadi .env kemudian buka file tersebut dan ubah nilai variable<br>
 CI_ENVIRINMENT menjadi development.<br>
-![image](img/.envi.jpg)<br>
+![image](SS/.envi.jpg)<br>
 
 # Membuat Route Baru
 Tambahkan kode berikut di dalam Routes.php<br>
@@ -44,10 +44,10 @@ $routes->get('/about', 'Page::about');
 $routes->get('/contact', 'Page::contact');
 $routes->get('/faqs', 'Page::faqs');
 ```
-![image](img/routes1.jpg)<br>
+![image](SS/routes1.jpg)<br>
 Untuk mengetahui route yang ditambahkan sudah benar, buka CLI dan jalankan<br>
 perintah ```php spark routes```<br>
-![image](img/routes11.jpg)<br>
+![image](SS/routes11.jpg)<br>
 
 # Membuat Controller
 Buat file baru dengan nama page.php<br>
@@ -72,7 +72,7 @@ echo "Ini halaman FAQ";
 }
 ```
 refresh kembali dan hasil akan berubah<br>
-![image](img/about11.jpg)<br>
+![image](SS/about11.jpg)<br>
 
 # Membuat View
 Buat file
@@ -104,7 +104,7 @@ halaman ini.'
 }
 ```
 Lalu refresh<br>
-![image](img/about22.jpg)<br>
+![image](SS/about22.jpg)<br>
 
 # Membuat Layout Web dengan CSS
 pada direktori public dengan nama style.css copy file dari praktikum <br>
@@ -168,5 +168,5 @@ Kemudian ubah file app/view/about.php seperti berikut.<br>
 <?= $this->include('template/footer'); ?>
 ``` 
 selanjutnya refresh akan muncul seperti gambar di bawah ini<br>
-![image](img/hasil.jpg)<br>
+![image](SS/hasil.jpg)<br>
 
